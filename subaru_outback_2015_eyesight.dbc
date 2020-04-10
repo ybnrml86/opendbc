@@ -382,6 +382,6 @@ CM_ SG_ 880 NEW_SIGNAL_4_2017 "1 in 2017";
 CM_ SG_ 880 NEW_SIGNAL_5_2017 "1 in 2017";
 CM_ SG_ 604 RCTA_RIGHT "Rear cross traffic alert, only when in R gear";
 CM_ SG_ 604 RCTA_LEFT "Rear cross traffic alert, only when in R gear";
-CM_ SG_ 604 LCA_LEFT "";
-CM_ SG_ 604 LCA_RIGHT "";
+CM_ SG_ 604 LCA_LEFT "Faster car approaching in far left lane";
+CM_ SG_ 604 LCA_RIGHT "Faster car approaching in far right lane";
 VAL_ 328 Gear 0 "N" 14 "R" 15 "P" ;
