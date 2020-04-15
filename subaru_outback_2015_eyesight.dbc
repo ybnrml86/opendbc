@@ -344,7 +344,6 @@ BO_ 604 BSD_RCTA: 8 XXX
 
 
 
-
 CM_ SG_ 2 NEW_SIGNAL_1 "";
 CM_ SG_ 211 Brake_Pedal_On "high tolerance";
 CM_ SG_ 212 FL "KPH";
