@@ -293,12 +293,8 @@ BO_ 802 ES_LKAS_State: 8 XXX
  SG_ LKAS_Left_Line_Green : 29|1@1+ (1,0) [0|1] "" XXX
  SG_ LKAS_Right_Line_Visible : 30|1@1+ (1,0) [0|1] "" XXX
  SG_ LKAS_Right_Line_Green : 31|1@1+ (1,0) [0|1] "" XXX
- SG_ FCW_Cont_Beep : 32|1@1+ (1,0) [0|1] "" XXX
- SG_ FCW_Repeated_Beep : 33|1@1+ (1,0) [0|1] "" XXX
- SG_ Throttle_Management_Activated : 34|1@1+ (1,0) [0|1] "" XXX
- SG_ Lead_Vehicle_Start_Alert : 35|1@1+ (1,0) [0|1] "" XXX
- SG_ Right_Depart : 36|1@1+ (1,0) [0|3] "" XXX
- SG_ Signal5 : 37|27@1+ (1,0) [0|1] "" XXX
+ SG_ LKAS_Alert : 32|4@1+ (1,0) [0|15] "" XXX
+ SG_ Signal5 : 36|28@1+ (1,0) [0|1] "" XXX
 
 BO_ 805 ES_NEW_MSG_22: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
@@ -444,8 +440,7 @@ CM_ SG_ 940 FOG_LIGHTS2 "yellow fog light in the dash";
 CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
 CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
 CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
-CM_ SG_ 802 FCW_Cont_Beep "Obstacle detected, continous beep";
-CM_ SG_ 802 FCW_Repeated_Beep "Obstacle detected, repeated beep";
+CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 4 = Throttle_Management_Activated, 7 = LDW_Right, 8 = Traffic_Light_Ahead, 12 = LDW_Left, 14 = Lead_vehicle_start_alert";
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
 CM_ SG_ 1677 Units "1 = imperial, 6 = metric";
