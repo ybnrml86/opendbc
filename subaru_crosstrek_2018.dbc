@@ -440,7 +440,7 @@ CM_ SG_ 940 FOG_LIGHTS2 "yellow fog light in the dash";
 CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
 CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
 CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
-CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 4 = Throttle_Management_Activated, 7 = LDW_Right, 8 = Traffic_Light_Ahead, 12 = LDW_Left, 14 = Lead_vehicle_start_alert";
+CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Notification, 4 = Throttle_Management_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert";
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
 CM_ SG_ 1677 Units "1 = imperial, 6 = metric";
