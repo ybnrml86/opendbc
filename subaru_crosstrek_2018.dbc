@@ -100,7 +100,7 @@ BO_ 314 Wheel_Speeds: 8 XXX
  SG_ FL : 51|13@1+ (0.057,0) [0|255] "kph" XXX
  SG_ RL : 38|13@1+ (0.057,0) [0|255] "kph" XXX
 
-BO_ 73 NEW_MSG_5: 8 XXX
+BO_ 73 CVT: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_1 : 32|8@1+ (1,0) [0|4095] "" XXX
  SG_ NEW_SIGNAL_2 : 24|8@1+ (1,0) [0|127] "" XXX
@@ -444,4 +444,4 @@ CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_M
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
 CM_ SG_ 1677 Units "1 = imperial, 6 = metric";
-VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6";
+VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6" ;
