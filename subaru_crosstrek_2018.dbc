@@ -391,8 +391,8 @@ BO_ 1677 Dash_State: 8 XXX
  SG_ Signal2 : 16|4@1+ (1,0) [0|15] "" XXX
  SG_ Icy_Road_Warning : 20|1@1+ (1,0) [0|1] "" XXX
  SG_ Signal3 : 21|8@1+ (1,0) [0|1] "" XXX
- SG_ Units : 29|3@1+ (1,0) [0|7] "" XXX
  SG_ Signal4 : 32|32@1+ (1,0) [0|1] "" XXX
+ SG_ Units : 29|3@1+ (1,0) [0|7] "" XXX
 
 BO_ 1743 NEW_MSG_41: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
@@ -444,5 +444,5 @@ CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
 CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Warning, 4 = Throttle_Management_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert";
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
-CM_ SG_ 1677 Units "AU/EU: 1 = imperial, 4 = metric US: 3 = imperial?";
-VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6";
+CM_ SG_ 1677 Units "AU/EU: 1 = imperial, 4 = metric US/Canada: 3 = imperial, 1 = metric(?)";
+VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6" ;
