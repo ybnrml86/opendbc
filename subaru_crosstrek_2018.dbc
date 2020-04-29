@@ -444,5 +444,5 @@ CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_M
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
 CM_ SG_ 1677 Units "AU/EU: 1 = imperial, 4 = metric US: 3 = imperial?";
-CM_ SG_ 1677 Signal2 "Counter, Signal3 += 1 when Signal2 = 15";
+CM_ SG_ 1677 Signal2 "Counter 0-15 with ~5sec steps, paused when brake is pressed, Signal3 += 1 when Signal2 = 15";
 VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6" ;
