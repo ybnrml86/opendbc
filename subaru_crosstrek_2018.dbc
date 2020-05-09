@@ -260,7 +260,6 @@ BO_ 801 ES_DashStatus: 8 XXX
  SG_ Counter : 8|4@1+ (1,0) [0|7] "" XXX
  SG_ PCB_Off : 12|1@1+ (1,0) [0|1] "" XXX
  SG_ LDW_Off : 13|1@1+ (1,0) [0|1] "" XXX
- SG_ Signal1 : 14|14@1+ (1,0) [0|1] "" XXX
  SG_ Cruise_Distance : 28|3@1+ (1,0) [0|3] "" XXX
  SG_ Signal2 : 31|1@1+ (1,0) [0|1] "" XXX
  SG_ Conventional_Cruise : 32|1@1+ (1,0) [0|1] "" XXX
@@ -276,6 +275,9 @@ BO_ 801 ES_DashStatus: 8 XXX
  SG_ Signal6 : 53|3@1+ (1,0) [0|1] "" XXX
  SG_ Far_Distance : 56|4@1+ (1,0) [0|15] "" XXX
  SG_ Cruise_State : 60|4@1+ (1,0) [0|15] "" XXX
+ SG_ Signal1 : 14|10@1+ (1,0) [0|1] "" XXX
+ SG_ Signal7 : 25|3@1+ (1,0) [0|1] "" XXX
+ SG_ Cruise_Soft_Disable : 24|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 802 ES_LKAS_State: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
@@ -294,8 +296,8 @@ BO_ 802 ES_LKAS_State: 8 XXX
  SG_ LKAS_Left_Line_Green : 29|1@1+ (1,0) [0|1] "" XXX
  SG_ LKAS_Right_Line_Visible : 30|1@1+ (1,0) [0|1] "" XXX
  SG_ LKAS_Right_Line_Green : 31|1@1+ (1,0) [0|1] "" XXX
- SG_ LKAS_Alert : 32|4@1+ (1,0) [0|15] "" XXX
  SG_ Signal5 : 36|28@1+ (1,0) [0|1] "" XXX
+ SG_ LKAS_Alert : 32|4@1+ (1,0) [0|15] "" XXX
 
 BO_ 805 ES_NEW_MSG_22: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
@@ -439,11 +441,12 @@ CM_ SG_ 940 Highbeam "01 = low beam, 11 = high beam";
 CM_ SG_ 940 FOG_LIGHTS2 "yellow fog light in the dash";
 CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
 CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
-CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
 CM_ SG_ 801 Far_Distance "1=0-5m, 2=5-10m, 3=10-15m, 4=15-20m, 5=20-25m, 6=25-30m, 7=30-35m, 8=35-40m, 9=40-45m, 10=45-50m, 11=50-55m, 12=55-60m, 13=60-65m, 14=65-70m, 15=75m+";
+CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
+CM_ SG_ 801 Cruise_Soft_Disable "Eyesight soft disable (eg direct sunlight)";
 CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Warning, 4 = Throttle_Management_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert";
 CM_ SG_ 805 NEW_SIGNAL_3 "always 3";
 CM_ SG_ 805 NEW_SIGNAL_4 "always 1";
-CM_ SG_ 1677 Units "AU/EU: 1 = imperial, 4 = metric US: 3 = imperial?";
 CM_ SG_ 1677 Signal2 "Counter 0-15 with ~5sec steps, paused when brake is pressed, Signal3 += 1 when Signal2 = 15";
+CM_ SG_ 1677 Units "AU/EU: 1 = imperial, 4 = metric US: 3 = imperial?";
 VAL_ 72 Gear 2 "N" 3 "R" 4 "P" 121 "D" 137 "1" 145 "2" 153 "3" 161 "4" 169 "5" 177 "6" ;
