@@ -234,11 +234,11 @@ BO_ 552 BSD_RCTA: 8 XXX
 BO_ 912 Dashlights: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
  SG_ Counter : 8|4@1+ (1,0) [0|15] "" XXX
- SG_ NEW_SIGNAL_3 : 24|1@0+ (1,0) [0|1] "" XXX
- SG_ NEW_SIGNAL_1 : 32|1@1+ (1,0) [0|3] "" XXX
  SG_ SEATBELT_FL : 48|1@1+ (1,0) [0|1] "" XXX
  SG_ LEFT_BLINKER : 50|1@1+ (1,0) [0|3] "" XXX
  SG_ RIGHT_BLINKER : 51|1@1+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_3 : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ ICY_ROAD : 32|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 940 BodyInfo: 8 XXX
  SG_ CHECKSUM : 0|8@1+ (1,0) [0|1] "" XXX
@@ -437,6 +437,7 @@ CM_ SG_ 545 Distance_Swap "Switch from Close to Far distance";
 CM_ SG_ 545 Cruise_EPB "1 = set Electric Parking Brake";
 CM_ SG_ 546 Cruise_RPM "ES RPM output for ECM and TCM";
 CM_ SG_ 546 Signal3 "0 when cruise_activated = 1";
+CM_ SG_ 912 ICY_ROAD "1 = DASHLIGHT ON, 2 = WARNING, 3 = OFF";
 CM_ SG_ 940 Highbeam "01 = low beam, 11 = high beam";
 CM_ SG_ 940 FOG_LIGHTS2 "yellow fog light in the dash";
 CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
