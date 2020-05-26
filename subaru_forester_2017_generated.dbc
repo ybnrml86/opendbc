@@ -107,6 +107,8 @@ BO_ 328 Transmission: 8 XXX
  SG_ Gear_2 : 52|4@1+ (1,0) [0|15] "" XXX
  SG_ Paddle_Shift : 60|2@1+ (1,0) [0|255] "" XXX
 
+BO_ 329 CVT_Ratio: 8 XXX
+
 BO_ 336 Brake_Pressure: 8 XXX
  SG_ Brake_Pressure_Right : 0|8@1+ (1,0) [0|15] "" XXX
  SG_ Brake_Pressure_Left : 8|8@1+ (1,0) [0|255] "" XXX
@@ -205,6 +207,8 @@ BO_ 864 Engine_Temp: 8 XXX
  SG_ Coolant_Temp : 24|8@1+ (1,-40) [0|255] "" XXX
  SG_ Cruise_Activated : 45|1@1+ (1,0) [0|3] "" XXX
  SG_ Saved_Speed : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 866 Fuel__: 8 XXX
 
 BO_ 604 BSD_RCTA: 8 XXX
  SG_ Counter : 0|3@1+ (1,0) [0|1] "" XXX
